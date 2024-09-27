@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div>
+        <h1>Coffee Timer</h1>
+        <input type="number" id="minutes" min="0" max="59" placeholder="MM" style="width: 50px;">
+        </div>
+      
+    
+    
+        <div class="cup">
+            <div class="coffee" id="coffee"></div>
+        </div>
+        <div class="button-container"> 
+            <button class="timer-button" onclick="startTimer()">Start</button>
+            <button class="timer-button" onclick="stopTimer()">Stop</button>
+        </div>
+
+        <p id="remaining-time"></p>
+        <audio id="alarme" src="alarme.mp3"></audio>
+    </div>
+    <footer>
+        <p>by Caroline Fabri</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

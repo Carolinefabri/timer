@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    background-image: url('b.png'); /* Substitua pelo seu URL ou caminho local */
+    background-size: cover; /* Faz a imagem cobrir todo o fundo */
+    background-position: center; 
+    background-repeat: no-repeat; 
+    margin: 0; 
+}
+
+
+.container {
+    text-align: center;
+    width: 90%; /* Limita a largura para telas pequenas */
+    max-width: 400px; /* Largura máxima para telas grandes */
+}
+
+.timer-button {
+    margin: 5px;
+    padding: 10px 20px; /* Aumenta o tamanho do botão para melhor usabilidade */
+    border-radius: 40px;
+    font-size: 16px; /* Tamanho de fonte adequado */
+    cursor: pointer;
+    display: inline-block; 
+    background-color: #6f4e37; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    border: none; /* Remove bordas padrão */
+    transition: background-color 0.3s; /* Transição suave para a mudança de cor */
+}
+
+.timer-button:hover {
+    background-color: #5b3e2a; /* Cor do botão quando o mouse está sobre ele */
+}
+
+.cup {
+    width: 100%; /* Ocupa toda a largura disponível */
+    max-width: 190px; /* Limita a largura máxima */
+    height: 180px;
+    background-color: #e0e0e0;
+    border-radius: 0 0 40px 40px; 
+    margin: 20px auto;
+    position: relative;
+    overflow: hidden;
+    border: 5px solid #d3d3d3;
+}
+
+.coffee {
+    background-color: #6f4e37;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    transition: height 1s linear;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px; /* Aumenta o tamanho do botão para melhor usabilidade */
+    border-radius: 40px;
+    font-size: 16px;
+}
+
+#remaining-time {
+    font-size: 24px; /* Tamanho de fonte adequado */
+    margin-top: 10px;
+}
+
+footer {
+    margin-top: 10px; /* Espaço acima do rodapé */
+}
+
+input[type="number"] {
+    width: 50px; /* Ajusta a largura do input */
+    padding: 7px;
+     align-items: center;
+    margin: 0 1px; 
+    border: 2px solid #6f4e37; 
+    border-radius: 40px;
+    font-size: 16px; /* Tamanho de fonte adequado */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); 
+}
+
+/* Media Queries para Ajustes em Telas Menores */
+@media (max-width: 600px) {
+    .timer-button {
+        padding: 8px 16px; /* Ajusta o tamanho dos botões */
+        font-size: 14px; /* Reduz o tamanho da fonte */
+    }
+
+    #remaining-time {
+        font-size: 20px; /* Reduz o tamanho da fonte do tempo restante */
+    }
+
+    input[type="number"] {
+        width: 5px;
+        padding: 7px;
+        margin: 0 1px; 
+        border: 2px solid #6f4e37; 
+        border-radius: 40px;
+        font-size: 9px;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); 
+    }
+
+    .cup {
+        max-width: 150px; /* Limita a largura da xícara em telas menores */
+    }
+}
+
+@media (max-width: 400px) {
+    #remaining-time {
+        font-size: 18px; /* Reduz ainda mais o tamanho da fonte em telas muito pequenas */
+    }
+}
